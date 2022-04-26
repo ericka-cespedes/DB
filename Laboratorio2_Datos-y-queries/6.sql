@@ -1,0 +1,11 @@
+-- Ocurre un error de integridad porque la tabla empleado tiene una foreign key que esta referenciando al department_id de la tabla departamento.
+--
+-- Esto significa que mientras exista un empleado utilizando el departamento con el ID 7, no se podra borrar el departamento.
+--
+-- En este ejemplo se ven los conceptos de integridad y el de entidades fuertes y debiles.
+-- 1. El concepto de integridad se refiere a la correctitud y completitud de la informacion en una base de datos.
+-- Cuando los contenidos se modifican con sentencias INSERT, DELETE o UPDATE, la integridad de los datos almacenados puede perderse de muchas
+-- maneras diferentes: pueden agregarse datos no validos a la base de datos.
+-- 2. Una entidad debil es una entidad cuya instancia no puede existir si no existe previamente la entidad fuerte. Una entidad fuerte puede ser
+-- identificada univocamente mientras que una debil no puede existir sin participar en la relacion. En este caso, el departamento no puede ser
+-- borrado porque el dato ingresado en la tabla de empleado no puede existir si tiene un departamento que no existe.

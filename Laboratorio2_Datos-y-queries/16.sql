@@ -1,0 +1,8 @@
+-- Ambos queries tienen un WHERE para que se retorne el primer valor seleccionado.
+--
+-- En caso del Query#1 solamente se usa un ORDER BY y se utliza el rownum para seleccionar el TOP.
+-- El Query#2 usa un RANK() OVER y utiliza el salary_rank obtenido de esta funcion para para seleccionar el TOP.
+--
+-- De esta manera, el Query#1 solamente retorna 1 valor y retorna el que selecciono primero por orden de filas.
+-- El Query#2 retorna 3 valores porque el RANK() OVER le asigna el mismo rango a las filas empatadas (con el mismo salario).
+-- Si hubieran 6 personas con el mismo salario y este fuera el maximo (30000), el Query#2 retornaria 6 valores.
