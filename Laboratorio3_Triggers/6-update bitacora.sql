@@ -1,0 +1,12 @@
+UPDATE ad_bitacora
+       SET id_bitacora=1
+       WHERE id_bitacora=6;
+UPDATE ad_bitacora
+       SET id_bitacora=2
+       WHERE id_bitacora=7;
+UPDATE ad_bitacora
+       SET id_bitacora=3
+       WHERE id_bitacora=8;
+UPDATE ad_bitacora
+       SET id_bitacora=4
+       WHERE id_bitacora=9;
