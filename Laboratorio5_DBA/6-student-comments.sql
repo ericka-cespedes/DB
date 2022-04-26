@@ -1,0 +1,47 @@
+COMMENT ON COLUMN COURSE.COURSE_ID
+IS 'The id of the course';
+
+COMMENT ON COLUMN COURSE.COURSE_NAME
+IS 'The name of the course';
+
+COMMENT ON COLUMN COURSE_X_MAJOR.COURSE_ID
+IS 'The id of the course';
+
+COMMENT ON COLUMN COURSE_X_MAJOR.MAJOR_ID
+IS 'The id of the major';
+
+COMMENT ON COLUMN MAJOR.MAJOR_ID
+IS 'The id of the major';
+
+COMMENT ON COLUMN MAJOR.MAJOR_NAME
+IS 'The name of the major';
+
+COMMENT ON COLUMN STUDENT.STUDENT_ID
+IS 'The id of the student';
+
+COMMENT ON COLUMN STUDENT.FIRST_NAME
+IS 'The first name of the student';
+
+COMMENT ON COLUMN STUDENT.LAST_NAME
+IS 'The last name of the student';
+
+COMMENT ON COLUMN STUDENT.EMAIL
+IS 'The email of the student';
+
+COMMENT ON COLUMN STUDENT.PERSONA_ID
+IS 'The personal id of the student';
+
+COMMENT ON COLUMN STUDENT_X_COURSE.STUDENT_ID
+IS 'The id of the student';
+
+COMMENT ON COLUMN STUDENT_X_COURSE.COURSE_ID
+IS 'The id of the course';
+
+COMMENT ON COLUMN STUDENT_X_COURSE.STATE_COURSE
+IS 'The status of the course';
+
+COMMENT ON COLUMN STUDENT_X_MAJOR.STUDENT_ID
+IS 'The id of the student';
+
+COMMENT ON COLUMN STUDENT_X_MAJOR.MAJOR_ID
+IS 'The id of the major';
